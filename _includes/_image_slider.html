@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="{{ site.url }}/images/1.JPG" alt="" />
+            <img src="{{ site.url }}/images/2.JPG" alt="" />
+            <img src="{{ site.url }}/images/2.JPG" alt="" />
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>

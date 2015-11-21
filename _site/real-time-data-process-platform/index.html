@@ -1,0 +1,351 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Real Time Data Process Platform &#8211; Yao's Page</title>
+<meta name="description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta name="keywords" content="Spark, Cassandra, Kafka">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Real Time Data Process Platform">
+<meta name="twitter:description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta name="twitter:site" content="@csyuyao">
+<meta name="twitter:creator" content="@csyuyao">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Real Time Data Process Platform">
+<meta property="og:description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta property="og:url" content="/real-time-data-process-platform/">
+<meta property="og:site_name" content="Yao's Page">
+
+<meta property="og:image" content="/images/default-thumb.png">
+
+
+
+
+
+
+<link rel="canonical" href="/real-time-data-process-platform/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yao's Page Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="/">Yao's Page</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				        
+				    
+				    <li><a href="/about/" >About Me</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="/gallery/" >Gallery</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="/posts/" >Posts</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="/images/profile.jpg" class="bio-photo" alt="Yao Yu bio photo">
+
+
+  <h3 itemprop="name">Yao Yu</h3>
+  <p>I am now studying in Shanghai Jiao Tong University for my Master degree, meanwhile, I work for CooTek as a intern.</p>
+  <a href="mailto:csyuyao@sjtu.edu.cn" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+  <a href="http://twitter.com/csyuyao" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  <a href="http://plus.google.com/+csyuyao" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+  
+  
+  
+  
+  <a href="http://github.com/romanyu" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="http://www.weibo.com/1668843440" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="/real-time-data-process-platform/" rel="bookmark" title="Real Time Data Process Platform">Real Time Data Process Platform</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h2 id="backgroud">Backgroud</h2>
+
+<p>The mobile phone will send a message to our server when an App is installed, in general, the message - called ‘activate log’ - contains some information, such as the timestamp the app installed, the name and version of the app, etc. In order to see publishes of upgrade or new versions are good or bad, we need to know how many users install the App.</p>
+
+<p>The matter should be noticed is that a device should be caculated only once even if the same App is installed many times. Maybe a user re-install the same App after uninstalled it, we just need the message received at the first installation, and discard others - reduplicative activate log.</p>
+
+<p>In general case, we get more than 200 thousand activates (both new installation and upgrade) just in the United States, at some special time, the number may exceed 1 million.</p>
+
+<h2 id="previous-work">Previous Work</h2>
+
+<p>We have a non-real-time process platform, using Hadoop for caculation, HDFS for storage of log files, HBase for dropping-reduplication.</p>
+
+<p>HBase<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> has a natrual charater suitable to dropping-reduplication bacause each inserted data has a timestamp, each cell can store one or more records of multiple versions with different timestamps. The version with the maximal timestamp means that it is the latest inserted one, and we will get the letest version of each cell when we query Hbasei by default. In order to discard all the later activate log but store the first one, just guarantee the first log has the maximal timestamp, although the reduplicative records are inserted into HBase, we can also get the first log with maximal timestamp.</p>
+
+<p>The official release of HBase has no method to insert data using custom timestamp, my collegue modified the source of <code>HBaseStorage(org.apache.pig.backend.hadoop.hbase.HBaseStorage)</code> to support custom timestamp in Pig<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, so we insert the first activate log with a maximal custom timestamp.</p>
+
+<p>We insert daily activate log into HBase to discard reduplication, and dump it on HDFS, then start a Hadoop<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> Streaming job to do a statistic.</p>
+
+<h2 id="imporve">Imporve</h2>
+
+<p>There are some factors that block us to realize real-time computing, Hadoop Streaming job has its drawback to real-time job, and HBase’s shell has limitations and so on.</p>
+
+<h4 id="spark">Spark</h4>
+
+<p>Compare to traditional off-line batch job, Spark<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> Streaming makes it easy to build scalable fault-tolerant streaming applications.</p>
+
+<blockquote>
+  <p>Internally, it works as follows. Spark Streaming receives live input data streams and divides the data into batches, which are then processed by the Spark engine to generate the final stream of results in batches.</p>
+</blockquote>
+
+<figure>
+    <a href="/attachment/real-time-process-platform/streaming-flow.png"><img src="/attachment/real-time-process-platform/streaming-flow.png" /></a>
+</figure>
+
+<p>You could select a specific interval for yourself, so Spark Streaming gets a small batch data and process on it which could improve the real-time ability.</p>
+
+<h4 id="cassandra">Cassandra</h4>
+
+<p>Compare to the limitation of shell in HBase, Cassandra<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup> - another NoSql - provides a more convenient acess, that is Cql. Although Cql is not as strong as Sql of relational database, it has the basic CRUD, a.k.a. <code>insert</code>/<code>select</code>/<code>update</code>/<code>delete</code> in SQL, which make it much clearer and easier to handle with data.</p>
+
+<blockquote>
+  <p>bin/cqlsh is an interactive command line interface for Cassandra. cqlsh allows you to execute CQL (Cassandra Query Language) statements against Cassandra. Using CQL, you can define a schema, insert data, execute queries.</p>
+</blockquote>
+
+<p>In additional, you could filter data in Cassandra server using <code>select</code> statement, that is, computing system could just read the specific data, not a complete table, which make process more effective. And many advantages make of Cassandra lead it to be massively scalable.</p>
+
+<blockquote>
+  <p>Cassandra supplies linear scalability, meaning that capacity may be easily added simply by adding new nodes online. For example, if 2 nodes can handle 100,000 transactions per second, 4 nodes will support 200,000 transactions/sec and 8 nodes will tackle 400,000 transactions/sec:</p>
+</blockquote>
+
+<figure>
+    <a href="/attachment/real-time-process-platform/intro-cassandra.png"><img src="/attachment/real-time-process-platform/intro-cassandra.png" /></a>
+</figure>
+
+<p>Meanwhile, although the insert statement in Cassandra doesn’t check primary key confilcts like relational database in default, it supports write-time as the timestamp of each cell in HBase, record with a larger write-time will overwrite the smaller one.</p>
+
+<pre><code>INSERT INTO NerdMovies (movie, director, main_actor, year)
+                VALUES ('Serenity', 'Joss Whedon', 'Nathan Fillion', 2005)
+                USING TIMESTAMP 86400;
+</code></pre>
+
+<h4 id="kakfa">Kakfa</h4>
+
+<p>We receive many logs about activate and active and others every day, which are divided by some key words, then we sent the data we need to Kafka<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup> cluster. Also, messages in Kafka are divided by topics, that is, you could use any topic you want.</p>
+
+<blockquote>
+  <p>Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.</p>
+</blockquote>
+
+<figure>
+    <a href="/attachment/real-time-process-platform/producer-consumer.png"><img src="/attachment/real-time-process-platform/producer-consumer.png" /></a>
+</figure>
+
+<p>Something may be confused is that whether the log would be discard after any consumer used it? No, Kafka sustains its messages until the date of this log file is over a threshold which you can set yourself or 7 days in default.</p>
+
+<h2 id="results">Results</h2>
+
+<p>The picture below shows the statitstics of Spark Streaming, as we can see, the input rate is around 9.11 events/sec that means there are more than 9 messages read from the Kafka cluster averagely. In brief, our processing contains parse, formation and insertion on every log, and the job process on a small batch data every 10 senconds, the processing time of a batch is around 81ms.</p>
+
+<figure>
+    <a href="/attachment/real-time-process-platform/streaming-statistics.png"><img src="/attachment/real-time-process-platform/streaming-statistics.png" /></a>
+</figure>
+
+<p>Then, we start another job every minute to query the data newly inserted into Cassnadra and do a statistic. So we can know how many new users install our App and how many old users upgrade our App in time because our results are freshed every minute.</p>
+
+<p>We can also use this framework to calculate DAU, a.k.a daily active user in real time.</p>
+
+<p>(END)</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="http://hbase.apache.org/">http://hbase.apache.org/</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="http://pig.apache.org/">http://pig.apache.org/</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="http://hadoop.apache.org/">http://hadoop.apache.org/</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="http://spark.apache.org/">http://spark.apache.org/</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="http://cassandra.apache.org/">http://cassandra.apache.org/</a> <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="http://kafka.apache.org/">http://kafka.apache.org/</a> <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/real-time-data-process-platform/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/real-time-data-process-platform/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/real-time-data-process-platform/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->
+        <p class="byline"><strong>Real Time Data Process Platform</strong> was published on <time datetime="2015-11-21T00:00:00+08:00">November 21, 2015</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="/author-override/" title="Author Override">Author Override</a></li>
+    
+      <li><a href="/code-highlighting-post/" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
+    
+      <li><a href="/sample-link-post/" title="Sample Link Post">Sample Link Post</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2015 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+   var disqus_config = function () {
+   this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   };
+   */
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//csyuyao.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+</body>
+</html>

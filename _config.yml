@@ -1,0 +1,66 @@
+# Site wide configuration
+
+title:            Yao's Page 
+locale:           en_US
+url:
+
+# paginate
+
+patenate: 5
+paginate_path: "post/page:num"
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Yao Yu 
+  avatar: profile.jpg
+  bio: "I am now studying in Shanghai Jiao Tong University for my Master degree, meanwhile, I work for CooTek as a intern."
+  email: csyuyao@sjtu.edu.cn
+  disqus-shortname: csyuyao
+  twitter: csyuyao 
+  facebook: #username
+  google:
+    plus: csyuyao 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: romanyu 
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: 1668843440 
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
