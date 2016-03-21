@@ -14,15 +14,11 @@ paginate_path: "post/page:num"
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: rouge 
-sass:
-  sass_dir: _sass
-  style: compressed
 gems:
   - jekyll-sitemap
-  - jekyll-gist
 
 kramdown:
+  syntax_highlighter: rouge
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
