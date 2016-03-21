@@ -9,7 +9,6 @@
 <meta name="description" content="A post to test author overrides using a data file.">
 <meta name="keywords" content="">
 
-  
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Author Override">
@@ -94,17 +93,11 @@
 		    <ul>
 		        
 				    
-				        
-				    
 				    <li><a href="/about/" >About Me</a></li>
 				
 				    
-				        
-				    
 				    <li><a href="/gallery/" >Gallery</a></li>
 				
-				    
-				        
 				    
 				    <li><a href="/posts/" >Posts</a></li>
 				
@@ -118,7 +111,6 @@
 <div id="main" role="main">
   <div class="article-author-side">
     
-  
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -160,34 +152,34 @@
     <div class="article-wrap">
       <p>For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.</p>
 
-<p>Previously the theme used a global author for the entire site and those attributes would be used in all bylines, social networking links, Twitter Card attribution, and Google Authorship. These <code>owner</code> variables were defined in <code>config.yml</code></p>
+<p>Previously the theme used a global author for the entire site and those attributes would be used in all bylines, social networking links, Twitter Card attribution, and Google Authorship. These <code class="highlighter-rouge">owner</code> variables were defined in <code class="highlighter-rouge">config.yml</code></p>
 
-<p>Start by modifying or creating a new <code>authors.yml</code> file in the <code>_data</code> folder and add your authors using the following format.</p>
+<p>Start by modifying or creating a new <code class="highlighter-rouge">authors.yml</code> file in the <code class="highlighter-rouge">_data</code> folder and add your authors using the following format.</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Authors</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Authors</span>
 
-<span class="l-Scalar-Plain">billy_rick</span><span class="p-Indicator">:</span>
-  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Billy Rick</span>
-  <span class="l-Scalar-Plain">web</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://thewhip.com</span>
-  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">billy@rick.com</span>
-  <span class="l-Scalar-Plain">bio</span><span class="p-Indicator">:</span> <span class="s">&quot;What</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">want,</span><span class="nv"> </span><span class="s">jewels?</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">am</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">very</span><span class="nv"> </span><span class="s">extravagant</span><span class="nv"> </span><span class="s">man.&quot;</span>
-  <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bio-photo-2.jpg</span>
-  <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">extravagantman</span>
-  <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">plus</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">BillyRick</span>
+<span class="s">billy_rick</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">Billy Rick</span>
+  <span class="s">web</span><span class="pi">:</span> <span class="s">http://thewhip.com</span>
+  <span class="s">email</span><span class="pi">:</span> <span class="s">billy@rick.com</span>
+  <span class="s">bio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">What</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">want,</span><span class="nv"> </span><span class="s">jewels?</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">am</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">very</span><span class="nv"> </span><span class="s">extravagant</span><span class="nv"> </span><span class="s">man."</span>
+  <span class="s">avatar</span><span class="pi">:</span> <span class="s">bio-photo-2.jpg</span>
+  <span class="s">twitter</span><span class="pi">:</span> <span class="s">extravagantman</span>
+  <span class="s">google</span><span class="pi">:</span>
+    <span class="s">plus</span><span class="pi">:</span> <span class="s">BillyRick</span>
 
-<span class="l-Scalar-Plain">cornelius_fiddlebone</span><span class="p-Indicator">:</span>
-  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Cornelius Fiddlebone</span>
-  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">cornelius@thewhip.com</span>
-  <span class="l-Scalar-Plain">bio</span><span class="p-Indicator">:</span> <span class="s">&quot;I</span><span class="nv"> </span><span class="s">ordered</span><span class="nv"> </span><span class="s">what?&quot;</span>
-  <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bio-photo.jpg</span>
-  <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rhymeswithsackit</span>
-  <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">plus</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">CorneliusFiddlebone</span></code></pre></div>
+<span class="s">cornelius_fiddlebone</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">Cornelius Fiddlebone</span>
+  <span class="s">email</span><span class="pi">:</span> <span class="s">cornelius@thewhip.com</span>
+  <span class="s">bio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">I</span><span class="nv"> </span><span class="s">ordered</span><span class="nv"> </span><span class="s">what?"</span>
+  <span class="s">avatar</span><span class="pi">:</span> <span class="s">bio-photo.jpg</span>
+  <span class="s">twitter</span><span class="pi">:</span> <span class="s">rhymeswithsackit</span>
+  <span class="s">google</span><span class="pi">:</span>
+    <span class="s">plus</span><span class="pi">:</span> <span class="s">CorneliusFiddlebone</span></code></pre></figure>
 
 <p>To assign Billy Rick as an author for our post. You’d add the following YAML front matter to a post:</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">billy_rick</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">author</span><span class="pi">:</span> <span class="s">billy_rick</span></code></pre></figure>
 
 
       <hr />
@@ -219,11 +211,11 @@
   <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
     <ul>
     
+      <li><a href="/leetcode-linked-list/" title="Singly Linked List On Leetcode.com">Singly Linked List On Leetcode.com</a></li>
+    
       <li><a href="/real-time-data-process-platform/" title="Real Time Data Process Platform">Real Time Data Process Platform</a></li>
     
       <li><a href="/code-highlighting-post/" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
-    
-      <li><a href="/sample-link-post/" title="Sample Link Post">Sample Link Post</a></li>
     
     </ul>
     <hr />
@@ -232,7 +224,7 @@
   <footer>
     
 
-<span>&copy; 2015 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2016 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->

@@ -10,7 +10,6 @@
 <meta name="keywords" content="Spark, Cassandra, Kafka">
 
 
-
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Real Time Data Process Platform">
 <meta name="twitter:description" content="A document about real-time data process using Kafka + Cassandra + Spark">
@@ -94,17 +93,11 @@
 		    <ul>
 		        
 				    
-				        
-				    
 				    <li><a href="/about/" >About Me</a></li>
 				
 				    
-				        
-				    
 				    <li><a href="/gallery/" >Gallery</a></li>
 				
-				    
-				        
 				    
 				    <li><a href="/posts/" >Posts</a></li>
 				
@@ -118,7 +111,6 @@
 <div id="main" role="main">
   <div class="article-author-side">
     
-
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -172,7 +164,7 @@
 
 <p>HBase<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> has a natrual charater suitable to dropping-reduplication bacause each inserted data has a timestamp, each cell can store one or more records of multiple versions with different timestamps. The version with the maximal timestamp means that it is the latest inserted one, and we will get the letest version of each cell when we query Hbasei by default. In order to discard all the later activate log but store the first one, just guarantee the first log has the maximal timestamp, although the reduplicative records are inserted into HBase, we can also get the first log with maximal timestamp.</p>
 
-<p>The official release of HBase has no method to insert data using custom timestamp, my collegue modified the source of <code>HBaseStorage(org.apache.pig.backend.hadoop.hbase.HBaseStorage)</code> to support custom timestamp in Pig<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, so we insert the first activate log with a maximal custom timestamp.</p>
+<p>The official release of HBase has no method to insert data using custom timestamp, my collegue modified the source of <code class="highlighter-rouge">HBaseStorage(org.apache.pig.backend.hadoop.hbase.HBaseStorage)</code> to support custom timestamp in Pig<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, so we insert the first activate log with a maximal custom timestamp.</p>
 
 <p>We insert daily activate log into HBase to discard reduplication, and dump it on HDFS, then start a Hadoop<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> Streaming job to do a statistic.</p>
 
@@ -196,13 +188,13 @@
 
 <h4 id="cassandra">Cassandra</h4>
 
-<p>Compare to the limitation of shell in HBase, Cassandra<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup> - another NoSql - provides a more convenient acess, that is Cql. Although Cql is not as strong as Sql of relational database, it has the basic CRUD, a.k.a. <code>insert</code>/<code>select</code>/<code>update</code>/<code>delete</code> in SQL, which make it much clearer and easier to handle with data.</p>
+<p>Compare to the limitation of shell in HBase, Cassandra<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup> - another NoSql - provides a more convenient acess, that is Cql. Although Cql is not as strong as Sql of relational database, it has the basic CRUD, a.k.a. <code class="highlighter-rouge">insert</code>/<code class="highlighter-rouge">select</code>/<code class="highlighter-rouge">update</code>/<code class="highlighter-rouge">delete</code> in SQL, which make it much clearer and easier to handle with data.</p>
 
 <blockquote>
   <p>bin/cqlsh is an interactive command line interface for Cassandra. cqlsh allows you to execute CQL (Cassandra Query Language) statements against Cassandra. Using CQL, you can define a schema, insert data, execute queries.</p>
 </blockquote>
 
-<p>In additional, you could filter data in Cassandra server using <code>select</code> statement, that is, computing system could just read the specific data, not a complete table, which make process more effective. And many advantages make of Cassandra lead it to be massively scalable.</p>
+<p>In additional, you could filter data in Cassandra server using <code class="highlighter-rouge">select</code> statement, that is, computing system could just read the specific data, not a complete table, which make process more effective. And many advantages make of Cassandra lead it to be massively scalable.</p>
 
 <blockquote>
   <p>Cassandra supplies linear scalability, meaning that capacity may be easily added simply by adding new nodes online. For example, if 2 nodes can handle 100,000 transactions per second, 4 nodes will support 200,000 transactions/sec and 8 nodes will tackle 400,000 transactions/sec:</p>
@@ -214,10 +206,11 @@
 
 <p>Meanwhile, although the insert statement in Cassandra doesn’t check primary key confilcts like relational database in default, it supports write-time as the timestamp of each cell in HBase, record with a larger write-time will overwrite the smaller one.</p>
 
-<pre><code>INSERT INTO NerdMovies (movie, director, main_actor, year)
+<div class="highlighter-rouge"><pre class="highlight"><code>INSERT INTO NerdMovies (movie, director, main_actor, year)
                 VALUES ('Serenity', 'Joss Whedon', 'Nathan Fillion', 2005)
                 USING TIMESTAMP 86400;
 </code></pre>
+</div>
 
 <h4 id="kakfa">Kakfa</h4>
 
@@ -300,11 +293,11 @@
   <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
     <ul>
     
+      <li><a href="/leetcode-linked-list/" title="Singly Linked List On Leetcode.com">Singly Linked List On Leetcode.com</a></li>
+    
       <li><a href="/author-override/" title="Author Override">Author Override</a></li>
     
       <li><a href="/code-highlighting-post/" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
-    
-      <li><a href="/sample-link-post/" title="Sample Link Post">Sample Link Post</a></li>
     
     </ul>
     <hr />
@@ -313,7 +306,7 @@
   <footer>
     
 
-<span>&copy; 2015 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+<span>&copy; 2016 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->

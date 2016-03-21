@@ -1,0 +1,291 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Singly Linked List On Leetcode.com &#8211; Yao's Page</title>
+<meta name="description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta name="keywords" content="Algorithm, Leetcode.com, Linked List">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Singly Linked List On Leetcode.com">
+<meta name="twitter:description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta name="twitter:site" content="@csyuyao">
+<meta name="twitter:creator" content="@csyuyao">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Singly Linked List On Leetcode.com">
+<meta property="og:description" content="A document about real-time data process using Kafka + Cassandra + Spark">
+<meta property="og:url" content="/leetcode-linked-list/">
+<meta property="og:site_name" content="Yao's Page">
+
+<meta property="og:image" content="/images/default-thumb.png">
+
+
+
+
+
+
+<link rel="canonical" href="/leetcode-linked-list/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yao's Page Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/assets/css/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="/">Yao's Page</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="/about/" >About Me</a></li>
+				
+				    
+				    <li><a href="/gallery/" >Gallery</a></li>
+				
+				    
+				    <li><a href="/posts/" >Posts</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="/images/profile.jpg" class="bio-photo" alt="Yao Yu bio photo">
+
+
+  <h3 itemprop="name">Yao Yu</h3>
+  <p>I am now studying in Shanghai Jiao Tong University for my Master degree, meanwhile, I work for CooTek as a intern.</p>
+  <a href="mailto:csyuyao@sjtu.edu.cn" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+  <a href="http://twitter.com/csyuyao" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  <a href="http://plus.google.com/+csyuyao" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+  
+  
+  
+  
+  <a href="http://github.com/romanyu" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="http://www.weibo.com/1668843440" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="/leetcode-linked-list/" rel="bookmark" title="Singly Linked List On Leetcode.com">Singly Linked List On Leetcode.com</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h2 id="linked-list">Linked List</h2>
+
+<p>This part is about operations on singly linked list.</p>
+
+<h4 id="add-two-numbers">2. Add Two Numbers</h4>
+
+<p>You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
+
+<p>Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</p>
+
+<p>Output: 7 -&gt; 0 -&gt; 8</p>
+
+<p>Solution:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="cm">/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">ListNode</span> <span class="n">addTwoNumbers</span><span class="o">(</span><span class="n">ListNode</span> <span class="n">l1</span><span class="o">,</span> <span class="n">ListNode</span> <span class="n">l2</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">ListNode</span> <span class="n">p_l1</span> <span class="o">=</span> <span class="n">l1</span><span class="o">;</span>
+        <span class="n">ListNode</span> <span class="n">p_l2</span> <span class="o">=</span> <span class="n">l2</span><span class="o">;</span>
+        <span class="n">ListNode</span> <span class="n">p_ret</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ListNode</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">ListNode</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">p_ret</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">carry</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">while</span><span class="o">(</span><span class="n">p_l1</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">p_l2</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">p_l1</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">sum</span> <span class="o">=</span> <span class="o">(</span><span class="mi">0</span> <span class="o">+</span> <span class="n">p_l2</span><span class="o">.</span><span class="na">val</span> <span class="o">+</span> <span class="n">carry</span><span class="o">);</span>
+                <span class="n">p_l2</span> <span class="o">=</span> <span class="n">p_l2</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">p_l2</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">sum</span> <span class="o">=</span> <span class="o">(</span><span class="n">p_l1</span><span class="o">.</span><span class="na">val</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">+</span> <span class="n">carry</span><span class="o">);</span>
+                <span class="n">p_l1</span> <span class="o">=</span> <span class="n">p_l1</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="n">sum</span> <span class="o">=</span> <span class="o">(</span><span class="n">p_l1</span><span class="o">.</span><span class="na">val</span> <span class="o">+</span> <span class="n">p_l2</span><span class="o">.</span><span class="na">val</span> <span class="o">+</span> <span class="n">carry</span><span class="o">);</span>
+                <span class="n">p_l1</span> <span class="o">=</span> <span class="n">p_l1</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+                <span class="n">p_l2</span> <span class="o">=</span> <span class="n">p_l2</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">%</span> <span class="mi">10</span><span class="o">;</span>
+            <span class="n">carry</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">/</span> <span class="mi">10</span><span class="o">;</span>
+            <span class="n">ListNode</span> <span class="n">p_temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ListNode</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
+            <span class="n">p_ret</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">p_temp</span><span class="o">;</span>
+            <span class="n">p_ret</span> <span class="o">=</span> <span class="n">p_ret</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">ret</span><span class="o">.</span><span class="na">next</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
+                <span class="n">ret</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">p_ret</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">carry</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span>
+            <span class="n">p_ret</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ListNode</span><span class="o">(</span><span class="n">carry</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">ret</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/leetcode-linked-list/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/leetcode-linked-list/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/leetcode-linked-list/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->
+        <p class="byline"><strong>Singly Linked List On Leetcode.com</strong> was published on <time datetime="2016-03-21T00:00:00+08:00">March 21, 2016</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="/real-time-data-process-platform/" title="Real Time Data Process Platform">Real Time Data Process Platform</a></li>
+    
+      <li><a href="/author-override/" title="Author Override">Author Override</a></li>
+    
+      <li><a href="/code-highlighting-post/" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2016 Yao Yu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+   var disqus_config = function () {
+   this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   };
+   */
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//csyuyao.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+</body>
+</html>
