@@ -23,17 +23,25 @@ image:
 
 ## Workding Experience
 
-*   Mar, 2015 - Present
+*   Mar, 2015 - Jan, 2016
     
     Software Development Engineer Intern at [TouchPal](http://touchpal.com){:target="_blank"}
     
     Focus on big data, through Hadoop and its eco-system(HBase, Pig, etc.) and Spark. 
 
-    1.  A real-time data process platform.(Kafka + Spark + Cassandra)
+    1. A off-line data process platform. (Hadoop + Hbase)
+
+        Using Hadoop Streaming to computing, Hbase to store historical data, including Python, Pig, MapReduce.
+
+    2. A real-time data process platform.(Kafka + Spark + Cassandra)
     
         Let Kafka be the input source of data, start a Spark Streaming job to get Dstream from Kafka, insert into Cassandra to discard some reduplicative record and backup all records. Another job gets the data newly inserted from Cassandra and make a statistic every an interval. Finally, update the total statistic. For more detail, see the [Real Time Data Process Platform](/real-time-data-process-platform).
 
-*   Sep, 2014 - Present
+    3. Project of TouchPal Internship Hackathon 2015
+
+        We have 24 hours to develop an AI to play a game named Battle Line. Finally our team get the **second place** of seven teams. For more detail and source code, please see the [Battleline-AI](/BattleLine-AI){:target="_blank"}.
+
+*   Sep, 2014 - Jan, 2016
 
     Teaching Assistant of Database, Python at [Shanghai Jiao Tong University](http://www.sjtu.edu.cn){:target="_blank"}
 
@@ -46,4 +54,4 @@ image:
 
 ## Awards
 
-*   Super Brain in Hackathon 2015 of TouchPal 
+*   [Super Brain in Hackathon 2015 of TouchPal](https://raw.githubusercontent.com/RomanYu/BattleLine-AI/gh-pages/images/award_for_outstanding_brain.jpg) 

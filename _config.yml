@@ -16,6 +16,9 @@ permalink:   /:categories/:title/
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-gist
+whitelist:
+  - jekyll-gist
 
 kramdown:
   syntax_highlighter: rouge
@@ -30,7 +33,7 @@ kramdown:
 owner:
   name: Yao Yu 
   avatar: profile.jpg
-  bio: "I am now studying in Shanghai Jiao Tong University for my Master degree, meanwhile, I work for CooTek as a intern."
+  bio: "I am now studying in Shanghai Jiao Tong University for my Master degree. My intrests of research is Big Data"
   email: csyuyao@sjtu.edu.cn
   disqus-shortname: csyuyao
   twitter: csyuyao 
