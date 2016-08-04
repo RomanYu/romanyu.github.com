@@ -23,6 +23,16 @@ image:
 
 ## Workding Experience
 
+*   June, 2016 - Present
+
+    Algorithm Engineer Intern at [dianping](http://dianping.com){:target="_blank"} (大众点评)
+    
+    Focus on recommendation algorithm.
+
+    1. User-based collaborative filtering. (Hadoop + Hive)
+
+        Recommendation on group buying (团购) using user-based CF algorithm, using MapReduce cause the large quantity of historical records. For more details, see the [An Introduction of User-based Collaborative Filtering](/user_based_collabrative_filtering).
+
 *   Mar, 2015 - Jan, 2016
     
     Software Development Engineer Intern at [TouchPal](http://touchpal.com){:target="_blank"}
@@ -47,9 +57,9 @@ image:
 
 ## Skills
 
-*   Program Laguage: Python, Java, Scala
-*   Focus On: Big Data Process, Hadoop Eco-System And Spark
-*   A Little About: Machine Learning
+*   Program Language: Python, Java, Scala, SQL
+*   Familiar with: Big Data Process, Hadoop Eco-System And Spark
+*   Focus on: Machine Learning, Recommendation Algorithm
 *   Operating System: Linux/Unix
 
 ## Awards
