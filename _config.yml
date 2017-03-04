@@ -2,7 +2,8 @@
 
 title:            Yao's Page 
 locale:           en_US
-url:
+url:		  https://romanyu.github.io
+site.baseurl:     https://romanyu.github.io
 
 # paginate
 
