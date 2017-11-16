@@ -108,7 +108,7 @@ comments: true
     <figcaption>浴室</figcaption>
 </figure>
 
-7、阳 台：
+- 阳 台：
 
 <figure>
     <a href="/images/house/IMG_20170219_150005_HDR-min.jpg"><img src="/images/house/IMG_20170219_150005_HDR-min.jpg"></a>
@@ -118,4 +118,16 @@ comments: true
 <figure>
     <a href="/images/house/IMG_20170304_154024_HDR-min.jpg"><img src="/images/house/IMG_20170304_154024_HDR-min.jpg"></a>
     <figcaption>新购置的洗衣机</figcaption>
+</figure>
+
+- 猫猫：
+
+<figure>
+    <a href="/images/house/big-brother-1.jpg"><img src="/images/house/big-brother-1.jpg"></a>
+    <figcaption>大兄弟</figcaption>
+</figure>
+
+<figure>
+    <a href="/images/house/big-brother-2.jpg"><img src="/images/house/big-brother-2.jpg"></a>
+    <figcaption>睡觉的大兄弟</figcaption>
 </figure>
