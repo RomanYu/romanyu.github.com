@@ -65,12 +65,7 @@ comments: true
 
 <figure>
     <a href="/images/house/IMG_20170219_145915_HDR-min.jpg"><img src="/images/house/IMG_20170219_145915_HDR-min.jpg"></a>
-    <figcaption>卧室楼梯上去一个平台</figcaption>
-</figure>
-
-<figure>
-    <a href="/images/house/mmexport1511426746943.jpg"><img src="/images/house/mmexport1511426746943.jpg"></a>
-    <figcaption>挑高的平台，1.6m＊1.9m床垫</figcaption>
+    <figcaption>卧室楼梯上去一个挑高的平台，1.6m＊1.9m床垫</figcaption>
 </figure>
 
 <figure>
